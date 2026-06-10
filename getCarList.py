@@ -142,21 +142,19 @@ def processThreads():
             thread_id, msg, img = future.result()
             msgMap[thread_id] = msg
             imgMap[thread_id] = img
-            print(f"Fetched [{len(msgMap)}/{len(threads)}]", end="\r")
     
 
-
+    print("Processing threads...")
     for t in threads:
-        print(f"Processing [{threadsCount}/{len(threads)}]: {t['name']:<120}", end="\r")
         threadsCount += 1
 
         if t['id'] == "1450407132959866913":
             continue # Skip over "Posting guidelines" pinned thread
         if not re.match(YEAR_RANGE_REGEX,t['name']):
-            errors.append(f"Error: {t['name']} Post is invalid")
+            errors.append(f"Error: the thread '{t['name']}' is incorrectly formatted.")
             continue
         if len(t['name'].split()) < 3:
-            errors.append(f"Error: {t['name']} Post is invalid")
+            errors.append(f"Error: the thread '{t['name']}' is incorrectly formatted.")
             continue
         msg = msgMap.get(t["id"])
 
@@ -202,7 +200,8 @@ def processThreads():
     with open("carList.json", "w", encoding="utf-8") as f:
         json.dump(export, f, indent=2, ensure_ascii=False)
 
-    print(f"\n{carCount} Cars exported")
+    print("========================\n Exporting Finished\n========================\nStats:")
+    print(f"\n{carCount} Cars Exported")
     if errors:
         print(*errors, sep='\n')
 

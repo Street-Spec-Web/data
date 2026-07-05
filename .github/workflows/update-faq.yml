@@ -17,8 +17,8 @@ jobs:
         with:
           python-version: '3.14'
 
-      - name: Install dependencies
-        run: pip install requests json5
+      - name: Install dependencies 
+        run: pip install requests json5 python-dotenv
 
       - name: Run script
         env:

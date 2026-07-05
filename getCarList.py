@@ -2,6 +2,8 @@ import requests, json, time, re, base64,io,os
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from PIL import Image
+from dotenv import load_dotenv
+load_dotenv()
 
 HEADERS = {"Authorization": f"Bot {os.environ['DISCORD_TOKEN']}"}
 FORUM_CHANNEL_ID = "1449430957663719653"

@@ -1,0 +1,34 @@
+name: Update Discord FAQ
+
+on:
+  push:
+    paths:
+      - 'Data/faq/faq.md'
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run script
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        run: python faq/updateFaq.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add faq/oldMessageIDs.jsonc
+          git diff --staged --quiet || git commit -m "Update car data"
+          git push

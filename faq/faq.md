@@ -7,7 +7,7 @@ No
 I genuinely don't know yet
 
 ### Is there a steam page?
-Yes : [click here](https://store.steampowered.com/app/4230950/StreetSpec/).
+Yes : [click here](<https://store.steampowered.com/app/4230950/StreetSpec/>).
 ### What will it release on?
 Windows PC = Yes
 
@@ -22,7 +22,7 @@ About 15€ / $17 / £13
 ## Social media / donations
 
 ### Is there a Kickstarter/Patreon?
-I have a patreon: [click here](https://www.patreon.com/streetspec).
+I have a patreon: [click here](<https://www.patreon.com/streetspec>).
 
 ### How do I get my patreon supporter discord role?
 Link your discord account to your patreon account. if you cant / it doesnt work, please use the [#patreon-access](discord://discord.com/channels/1448022502969315440/1483228116985053274) channel in the discord server.
@@ -38,7 +38,7 @@ its a secret.
 Probably not, also I'm not even doing any kind of testing yet, that comes later in development.
 
 ### Can I make music for your game?
-You can put your info in this google sheets file: https://docs.google.com/spreadsheets/d/1LPmZ6XbRerxY333Ib95vQbvTqOLfmZRVh0-z1dja8dE/edit?usp=sharing
+You can put your info in this google sheets file: <https://docs.google.com/spreadsheets/d/1LPmZ6XbRerxY333Ib95vQbvTqOLfmZRVh0-z1dja8dE/edit?usp=sharing>
 I get a lot of requests about this so I am unlikely to reply to your DM if it's about music, unless you're some kinda famous artist.
 
 ### Can I help you with 3d modeling/programming?

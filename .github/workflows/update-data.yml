@@ -17,7 +17,7 @@ jobs:
           python-version: '3.14'
 
       - name: Install dependencies
-        run: pip install requests Pillow
+        run: pip install requests Pillow dotenv
 
       - name: Run script
         env:

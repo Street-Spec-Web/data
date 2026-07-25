@@ -6,7 +6,7 @@ START = datetime.now()
 load_dotenv()
 
 HEADERS = {"Authorization": f"Bot {os.environ['DISCORD_TOKEN']}","Content-Type": "application/json"}
-FAQ_CHANNEL = "1523392449223987200"
+FAQ_CHANNEL = "1448400987093205004"
 BASE_ENDPOINT = "https://discord.com/api/v10/"
 
 print(repr(os.environ['DISCORD_TOKEN']))

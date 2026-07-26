@@ -4,7 +4,7 @@
 No
 
 ### When will the game release?
-I genuinely don't know yet
+I genuinely don't know yet.
 
 ### Is there a steam page?
 Yes : [click here](<https://store.steampowered.com/app/4230950/StreetSpec/>).

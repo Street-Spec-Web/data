@@ -3,7 +3,7 @@ name: Update Discord FAQ
 on:
   push:
     paths:
-      - 'Data/faq/faq.md'
+      - 'faq/faq.md'
   workflow_dispatch:  # allows manual trigger from GitHub UI
 
 jobs:

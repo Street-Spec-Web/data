@@ -30,7 +30,7 @@ Link your discord account to your patreon account. if you cant / it doesnt work,
 I have social media accounts for Instagram, Youtube and TikTok.
 
 ### How to get the OG role on discord?
-its a secret.
+It's a secret.
 
 ## Outreach / help on Street Spec
 
